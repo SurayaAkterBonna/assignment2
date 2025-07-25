@@ -252,3 +252,135 @@ body {
     line-height: 1.6;
     margin-bottom: 15px;
 }
+
+.latest-deals-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+.latest-deals-section .section-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.latest-deals-section .section-description {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.deals-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.deal-item {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.deal-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+    border-radius: 10px;
+}
+
+.deal-item .deal-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.deal-item .deal-off {
+    font-family: 'Noto Serif', serif;
+    font-size: 2.5em; 
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.deal-item .deal-plant-name {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.8em; 
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.deal-item .shop-now-text {
+    color: #fff; 
+    font-size: 1em; 
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 8px; 
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.deal-item .shop-now-text:hover {
+    color: #f0f0f0; 
+    text-decoration-color: #f0f0f0; 
+}
+
+.deal-item .deal-combo-name {
+    font-family: 'Noto Serif', serif;
+    font-size: 2.5em; 
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.small-deal {
+    grid-column: span 1;
+    min-height: 280px;
+}
+
+.small-deal .deal-off,
+.small-deal .deal-plant-name,
+.small-deal .deal-combo-name {
+    font-size: 20px; 
+}
+
+.large-deal {
+    grid-column: span 1;
+    grid-row: span 2;
+    min-height: 580px;
+}
+
+
+.large-deal .deal-off,
+.large-deal .deal-plant-name,
+.large-deal .deal-combo-name {
+    font-size: 40px; 
+}
