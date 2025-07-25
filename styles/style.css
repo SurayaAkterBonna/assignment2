@@ -403,6 +403,7 @@ body {
 .newsletter-content {
     max-width: 700px;
     margin: 0 auto;
+    color: white;
 }
 
 .newsletter-content h1 {
