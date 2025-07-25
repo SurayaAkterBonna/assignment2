@@ -408,6 +408,7 @@ body {
 
 .newsletter-content h1 {
     font-family: 'Noto Serif', serif;
+    color: white;
     font-size: 3.5em; 
     margin-bottom: 30px;
     line-height: 1.2;
