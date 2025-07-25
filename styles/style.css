@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu-item {
+    font-size: 18px;
+    font-weight: 500;
+   color: #8987a1;
+    white-space: nowrap;
+    cursor: default;
+}
+
+.menu-item.active {
+    color: #333;
+    font-weight: bold;
+}
+
+.cart-display {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-weight: 500;
+}
+
+.cart-icon {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #000;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 80px;
+    background-color: white;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 550px;
+    margin-right: 50px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-family: 'Noto Serif', serif;
+}
+
+.hero-content .orange-text {
+    color: #ff6600;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.plants-page-main {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plants-hero {
+    margin-bottom: 50px;
+}
+
+.plants-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.plants-title .orange-text {
+    color: #FF721F;
+}
+
+.plants-description {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.product-listing {
+    padding: 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.product-price {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.add-to-cart-btn {
+    background-color: #FF721F;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.flower-lover-section {
+    background-color: #f8faff;
+    padding: 80px 20px;
+}
+
+.flower-lover-section .flower-lover-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+
+.flower-lover-section .image-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+.flower-lover-section .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.flower-lover-section .trusted-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: auto;
+    z-index: 10;
+}
+
+.flower-lover-section .text-content-flower-lover {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.flower-lover-section .text-content-flower-lover h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.flower-lover-section .text-content-flower-lover ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+.flower-lover-section .text-content-flower-lover li {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
