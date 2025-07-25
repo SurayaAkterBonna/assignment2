@@ -384,3 +384,64 @@ body {
 .large-deal .deal-combo-name {
     font-size: 40px; 
 }
+
+
+.newsletter-section {
+    background-image: url('/assets/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+}
+
+.newsletter-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.newsletter-content h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 3.5em;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 18px 25px;
+    border: none;
+    
+    font-size: 1.1em;
+    flex-grow: 1;
+    min-width: 250px;
+    color: #333;
+}
+
+.newsletter-form button {
+    background-color: #FF721F;
+    color: white;
+    border: none;
+    padding: 18px 35px;
+    
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #e65c00;
+}
